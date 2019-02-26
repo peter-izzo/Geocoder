@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+  margin: 0%;
+  background-color: #81D8D0;
+}
+
+.container {
+  margin: auto;
+  border-width: 2px;
+  border-color: #ffffff
+  background-color: #81D8D0
+  overflow: scroll;
+  text-align: center;
+}
+
+.container h1{
+  font-family: Courier, monospace;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+form{
+  caret-color: red;
+}
+
+.invalid{
+  background: red;
+  border: 10px;
+  border-radius: 10px 100px / 120px;
+  color: black;
+  border-color: yellow;
+  font-style: italic;
+
+}
+.message{
+  background: red;
+  border: 10px;
+  border-radius: 10px 100px / 120px;
+  color: black;
+  border-color: yellow;
+  font-style: italic;

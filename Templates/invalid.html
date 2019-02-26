@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../static/main.css" rel = "stylesheet">
+</head>
+  <body>
+    <div class="container">
+      <h1>Geocoder</h1>
+      <br>
+      <h1 class="invalid">Invalid filetype! Please choose a spreadsheet filetype.</h1>
+      <br>
+      <div class="message">
+
+
+      </div>
+      <form action="{{url_for('success')}}" method="POST" enctype="multipart/form-data" placeholder="Please upload your CSV file here">
+        <input type="file" accept=".csv, .xml, .xls, .xlsx" name="file" title="Please upload a file with location data here" required>
+      <!-- -->
+        <button type="submit">Submit</button>
+      </form>
+      <div class="message">
+        <!-- {{text | safe}} -->
+      </div>
+      <br>
+      <p>Please make sure your spreadsheet has an "Address" column</p>
+      <br>
+      <a href="{{url_for('index')}}">Back to the beginning.</a>
+
+
+    </div>
+  </body>
+
+
+</html>
